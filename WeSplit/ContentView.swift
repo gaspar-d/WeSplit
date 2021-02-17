@@ -3,14 +3,14 @@
 //
 //  Created by Diogo Gaspar on 11/02/21.
 //
-//  Cmd p resume preview
-//  Opt Cmd enter show hide preview
+
+// There's a branch called "textfield" with the challenge 3 solved.
 
 import SwiftUI
 
 struct ContentView: View {
     @State private var checkAmount = ""
-    @State private var numberOfPeople = 2
+    @State private var numberOfPeople = 0
     @State private var tipPercentage = 2
     
     let tipPercentages = [10, 15, 20, 25, 0]
