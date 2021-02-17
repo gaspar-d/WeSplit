@@ -3,8 +3,8 @@
 //
 //  Created by Diogo Gaspar on 11/02/21.
 //
-//  Cmd p resume preview
-//  Opt Cmd enter show hide preview
+
+// Version using "TextField" to solve challenge 3
 
 import SwiftUI
 
@@ -36,8 +36,6 @@ struct ContentView: View {
         return totalToPay
     }
     
-//     Opa
-    
     var body: some View {
         NavigationView {
             Form {
@@ -46,12 +44,6 @@ struct ContentView: View {
                         .keyboardType(.decimalPad)
                     
                     TextField("Number of people (default: 2)", text: $numberOfPeople)
-                    
-//                    Picker("Number of people", selection: $numberOfPeople) {
-//                        ForEach(2 ..< 100) {
-//                            Text("\($0) people")
-//                        }
-//                    }
                 }
                 
                 Section(header: Text("How much tip do you want to leave?")
